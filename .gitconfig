@@ -4,3 +4,4 @@
 [alias]
 	st = status
 	co = checkout
+	ds = diff --staged
