@@ -4,3 +4,9 @@ alias l='ls -CF'
 alias gw='./gradlew'
 alias gq='./gradlew -q'
 alias git=hub
+alias ec='emacsclient -c -n'
+
+if [ -d "/home/max/julia/bin" ];
+then
+    export PATH="$PATH:/home/max/julia/bin"
+fi
