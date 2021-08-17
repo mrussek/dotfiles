@@ -93,3 +93,7 @@
 (add-to-list 'auto-mode-alist '(".*_EDITMSG\\'" . text-mode))
 (add-to-list 'auto-mode-alist '("\\.ml[ily]?$" . tuareg-mode))
 (add-to-list 'auto-mode-alist '("\\.pro$" . prolog-mode))
+
+(add-hook 'window-setup-hook 'toggle-frame-fullscreen t)
+
+(set-frame-font "Menlo-36")

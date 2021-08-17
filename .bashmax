@@ -8,3 +8,9 @@ alias git=hub
 if command -v rbenv &> /dev/null; then
   eval "$(rbenv init -)"
 fi
+alias ec='emacsclient -c -n'
+
+if [ -d "/home/max/julia/bin" ]
+then
+    export PATH="$PATH:/home/max/julia/bin"
+fi
