@@ -5,3 +5,5 @@
 	st = status
 	co = checkout
 	ds = diff --staged
+[pull]
+	ff = only
