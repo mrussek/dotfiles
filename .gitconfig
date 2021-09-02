@@ -7,3 +7,5 @@
 	ds = diff --staged
 [pull]
 	ff = only
+[init]
+	defaultBranch = main
