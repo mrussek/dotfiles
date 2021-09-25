@@ -4,6 +4,7 @@ alias l='ls -CF'
 alias gw='./gradlew'
 alias gq='./gradlew -q'
 alias git=hub
+alias k=kubectl
 
 if command -v rbenv &> /dev/null; then
   eval "$(rbenv init -)"
