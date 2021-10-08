@@ -4,7 +4,9 @@ alias l='ls -CF'
 alias gw='./gradlew'
 alias gq='./gradlew -q'
 alias git=hub
+alias d=docker
 alias k=kubectl
+alias "mvq=mvn -q"
 
 if command -v rbenv &> /dev/null; then
   eval "$(rbenv init -)"
@@ -15,3 +17,9 @@ if [ -d "/home/max/julia/bin" ]
 then
     export PATH="$PATH:/home/max/julia/bin"
 fi
+
+parse_git_branch () {
+  git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\[\e[1;34m\]($(date +%Y.%V)) \[\033[32m\]\W:\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
