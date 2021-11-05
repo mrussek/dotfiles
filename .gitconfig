@@ -9,3 +9,11 @@
 	ff = only
 [init]
 	defaultBranch = main
+[color]
+	ui = auto
+[credential]
+	helper = osxkeychain
+[push]
+	default = tracking
+[pull]
+	rebase = true
